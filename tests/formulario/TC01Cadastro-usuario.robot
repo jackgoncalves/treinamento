@@ -1,8 +1,8 @@
 *** Settings ***
 Test Setup            Abrir navegador    
 Test Teardown         Fechar navegador
-Resource              ../pages/Cadastro-usuario.robot
-Resource              ../resources/resource.robot
+Resource              ../../pages/formulario/Cadastro-usuario.robot
+Resource              ../../resources/resource.robot
 
 
 
