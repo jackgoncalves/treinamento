@@ -1,8 +1,8 @@
 *** Settings ***
 Test Setup            Abrir navegador    
 Test Teardown         Fechar navegador
-Resource              ../../pages/formulario/Cadastro-usuario.robot
-Resource              ../../resources/resource.robot
+Resource              ../pages/formulario/Cadastro-usuario.robot
+Resource              ../resources/resource.robot
 
 
 
@@ -12,7 +12,6 @@ Resource              ../../resources/resource.robot
 TC01 - Cadastro novo usuário
     [Documentation]    Esse teste cadastra novo usuário        
     [Tags]             Cadastro
-
     Dado que estou no site de treinamento
     E clico em criar usuário    
     Quando preencho todos os campos

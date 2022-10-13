@@ -18,12 +18,13 @@ ${MSG_EXCLUIDO_SUCES}                 Seu Usuário foi removido com sucesso!
 
 Quando clico em lista de usuários    
     Click Element                    locator=${BTN_FORMULARIO}
-    Wait Until Element Is Visible    locator=${BTN_CRIAR_USUARIO}
+    Wait Until Element Is Visible    locator=${BTN_LISTA_USUARIO}
     Click Element                    locator=${BTN_LISTA_USUARIO}
 
 
 E clico em excluir um usuário
     # Set Selenium Speed    value=0.5
+    Wait Until Page Contains         text=Lista de Usuários!!
     Click Element                    locator=${ICONE_LIXEIRA} 
   
     

@@ -49,6 +49,7 @@ ${MSG_SUCESSO}           Usuário Criado com sucesso
 Dado que estou no site de treinamento
     Go To                           url=${URL}
     Wait Until Page Contains        text=${TXT_INICIAL}
+    Title Should Be                 title=Automação com Batista
 
 E clico em criar usuário    
     Click Element                    locator=${BTN_FORMULARIO}
